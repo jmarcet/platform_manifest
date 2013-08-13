@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remote  name="aosp"
+  <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
-  <remote name="th"
+  <remote  name="google"
+           fetch="https://code.google.com/p" />
+  <remote  name="th"
            fetch="https://github.com/TeamHorizon/" />
   <remote  name="general"
            fetch="https://github.com" />
@@ -15,11 +17,13 @@
            fetch="https://github.com/koush/" />
   <remote  name="faux"
            fetch="https://github.com/faux123/" />
+  <remote  name="jmarcet"
+           fetch="https://github.com/jmarcet/" />
   <default revision="refs/tags/android-4.2.2_r1.2"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="android_build" remote="th" revision="jb-mr1">
+  <project path="build" name="android_build" remote="jmarcet" revision="jb-mr1">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
@@ -44,9 +48,9 @@
   <project path="device/htc/endeavoru" name="android_device_htc_endeavoru" remote="th" revision="jb-mr1" />
   <project path="device/htc/msm8660-common" name="android_device_htc_msm8660-common" remote="th" revision="jb-mr1" />
   <project path="device/htc/msm8960-common" name="android_device_htc_msm8960-common" remote="cm" revision="cm-10.1" />
-  <project path="device/htc/vigor" name="TheBr0ken/device_htc_vigor" remote="general" revision="xenon" />
+  <project path="device/htc/vigor" name="TheBr0ken/device_htc_vigor" remote="general" revision="cm-10.1" />
   <project path="device/lge/e975" name="android_device_lge_e975" remote="th" revision="jb-mr1" />
-  <project path="device/lge/mako" name="device_lge_mako" remote="th" revision="jb-mr1" />
+  <project path="device/lge/mako" name="device_lge_mako" remote="jmarcet" revision="jb-mr1" />
   <project path="device/motorola/mb886" name="android_device_motorola_mb886" remote="th" revision="jb-mr1" />
   <project path="device/motorola/msm8960-common" name="android_device_motorola_msm8960-common" remote="th" revision="jb-mr1" />
   <project path="device/motorola/spyder" name="android_device_motorola_spyder" remote="th" revision="jb-mr1" />
@@ -345,11 +349,11 @@
   <project path="packages/apps/Phone" name="android_packages_apps_Phone" remote="th" revision="jb-mr1" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" revision="refs/tags/android-4.2.2_r1.1" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" revision="refs/tags/android-4.2.2_r1.1" />
-  <project path="packages/apps/ROMSettings" name="packages_apps_ROMSettings" remote="th" revision="jb-mr1" />
+  <project path="packages/apps/ROMSettings" name="packages_apps_ROMSettings" remote="jmarcet" revision="jb-mr1" />
   <project path="packages/apps/ROMStats" name="android_packages_apps_ROMStats" remote="th" revision="jb-mr1" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" revision="refs/tags/android-4.2.2_r1.1" />
   <project path="packages/apps/SamsungServiceMode" name="android_packages_apps_SamsungServiceMode" remote="cm" revision="cm-10.1" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="th" revision="jb-mr1" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="jmarcet" revision="jb-mr1" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" revision="refs/tags/android-4.2.2_r1.1" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" revision="refs/tags/android-4.2.2_r1.1" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" revision="refs/tags/android-4.2.2_r1.1" />
@@ -434,13 +438,14 @@
   <project path="vendor/motorola" name="proprietary_vendor_motorola-omap" remote="th" revision="jb-mr1" />
   <project path="vendor/oppo" name="proprietary_vendor_oppo" remote="th" revision="jb-mr1" />
   <project path="vendor/qcom/opensource/v8" name="android_vendor_qcom_opensource_v8" remote="th" revision="cm-10.1" />
-  <project path="vendor/xenonhd" name="vendor_xenonhd" remote="th" revision="jb-mr1" />
+  <project path="vendor/unbundled_google/libs/gcm" name="gcm" remote="google" revision="master" />
+  <project path="vendor/xenonhd" name="vendor_xenonhd" remote="jmarcet" revision="jb-mr1" />
 
   <project path="vendor/tmobile/apps/ThemeChooser" name="AOKP/themes-platform-vendor-tmobile-apps-ThemeChooser" remote="aokp" revision="jb-mr1" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="AOKP/vendor_tmobile_libs_com.tmobile.themes" remote="aokp" revision="jb-mr1" />
   <project path="vendor/tmobile/providers/ThemeManager" name="AOKP/vendor_tmobile_providers_ThemeManager" remote="aokp" revision="jb-mr1" />
   <project path="vendor/tmobile/products/themes" name="android_vendor_tmobile_products_themes" remote="cm" revision="cm-10.1" />
 
-  <project path="platform_manifest" name="platform_manifest" remote="th" revision="jb-mr1" />
+  <project path="platform_manifest" name="platform_manifest" remote="jmarcet" revision="jb-mr1" />
 
 </manifest>
