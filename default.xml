@@ -429,7 +429,7 @@
 
   <project path="vendor/asus" name="android_vendor_asus" remote="th" revision="jb-mr1" />
   <project path="vendor/htc" name="proprietary_vendor_htc" remote="th" revision="jb-mr1" />
-  <project path="vendor/lge" name="vendor_lge" remote="th" revision="jb-mr1" />
+  <project path="vendor/lge" name="vendor_lge" remote="jmarcet" revision="jb-mr1" />
   <project path="vendor/samsung" name="platform_vendor_samsung" remote="th" revision="jb-mr1" />
   <project path="vendor/motorola/msm8960-common" name="android_vendor_motorola_msm8960-common" remote="th" revision="jb-mr1" />
   <project path="vendor/motorola/mb886" name="android_vendor_motorola_mb886" remote="th" revision="jb-mr1" />
