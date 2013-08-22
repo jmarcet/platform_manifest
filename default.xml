@@ -175,6 +175,7 @@
   <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" />
   <project path="external/libnl-headers" name="platform/external/libnl-headers" />
   <project path="external/libogg" name="platform/external/libogg" />
+  <project path="external/libparted" name="trevd/libparted-android" remote="general" revision="master" />
   <project path="external/libpcap" name="platform/external/libpcap" />
   <project path="external/libphonenumber" name="platform/external/libphonenumber" />
   <project path="external/libpng" name="external_libpng" remote="th" revision="jb-mr1" />
